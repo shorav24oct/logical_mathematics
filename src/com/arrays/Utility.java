@@ -1,5 +1,6 @@
 package com.arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Utility {
@@ -14,5 +15,9 @@ public class Utility {
             arr[i] = sc.nextInt();
         }
         return arr;
+    }
+
+    public static int sum(int[] arr){
+        return Arrays.stream(arr).sum();
     }
 }
