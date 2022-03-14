@@ -21,6 +21,7 @@ public class FindRepeatNo {
         return -1;
     }
 
+    // efficient approach
     public static int repeatEfficient(int[] arr){
         int n = arr.length;
         int sumN = ((n-2) * (n-1)) / 2;
