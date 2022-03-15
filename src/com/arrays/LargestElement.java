@@ -1,9 +1,13 @@
 package com.arrays;
 
+/**
+ * I/P: arr[] = {10, 5, 8, 20}
+ * O/P: 3 // index of 20
+ */
 public class LargestElement {
     public static void main(String[] args) {
         int[] arr = Utility.input();
-        int largest = getLargeElement(arr);
+        int largest = getLargestElementEff(arr);
         System.out.println("Largest Element is: " + arr[largest]);
     }
 
@@ -25,7 +29,7 @@ public class LargestElement {
     }
 
     // efficient solution
-    public static int getLargeElement(int[] arr){
+    public static int getLargestElementEff(int[] arr){
         int res = 0;
         for(int i = 1; i < arr.length; i++){
             if(arr[i] > arr[res])
