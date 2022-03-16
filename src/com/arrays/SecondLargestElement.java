@@ -17,6 +17,9 @@ public class SecondLargestElement {
         System.out.println("second largest element is: " + arr[element]);
     }
 
+    /**
+     * naive approach
+     */
     public static int secondLargestElement(int[] arr) {
         int largest = LargestElement.getLargestElementEff(arr);
         int res = -1;

@@ -11,7 +11,10 @@ public class LargestElement {
         System.out.println("Largest Element is: " + arr[largest]);
     }
 
-    // naive approach
+    /**
+     * Naive Approach
+     * Time Complexity O(n^2)
+     */
     public static int getLargestElement(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n; i++) {
@@ -28,7 +31,10 @@ public class LargestElement {
         return -1;
     }
 
-    // efficient solution
+    /**
+     * efficient solution
+     * Time Complexity O(n)
+     */
     public static int getLargestElementEff(int[] arr){
         int res = 0;
         for(int i = 1; i < arr.length; i++){
