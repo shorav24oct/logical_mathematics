@@ -6,7 +6,7 @@ public class Prime {
         if (no == 1)
             return false;
 
-        for (int i = 2; i <= no; i++)
+        for (int i = 2; i < no; i++)
             if (no % i == 0)
                 return false;
 
